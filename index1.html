@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Student Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #0f1117;
+      --accent-color: #00ffae;
+      --text-color: #fff;
+      --bg-light: #1c1f26;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #12151b;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      background-color: #191c22;
+    }
+
+    nav a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: var(--bg-light);
+      padding: 20px;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 8px;
+    }
+
+    a {
+      color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #12151b;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jane CyberStudent</h1>
+  <p>Cybersecurity Enthusiast | CTF Player | Future Penetration Tester</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#writeups">Write-ups</a>
+  <a href="#certs">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m Jane, a cybersecurity student passionate about ethical hacking, penetration testing, and malware analysis. I regularly participate in CTFs, study vulnerabilities from CVEs, and explore topics like buffer overflows and web exploitation. My long-term goal is to work in offensive security or red teaming.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="card-grid">
+    <div class="card"><strong>Languages:</strong> Python, Bash, JavaScript</div>
+    <div class="card"><strong>Tools:</strong> Burp Suite, Nmap, Metasploit, Wireshark</div>
+    <div class="card"><strong>OS:</strong> Kali Linux, Parrot OS, Windows</div>
+    <div class="card"><strong>Techniques:</strong> Web Exploitation, Enumeration, Privilege Escalation</div>
+    <div class="card"><strong>Knowledge:</strong> OWASP Top 10, MITRE ATT&CK, CVE Analysis</div>
+    <div class="card"><strong>Cloud:</strong> AWS (Basic), Azure (Basic), S3 misconfigurations</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>VulnHub Walkthrough Automation</h3>
+      <p>Python script to automate enumeration on VulnHub VMs. Uses Nmap, Gobuster, Nikto, and Dirsearch.</p>
+    </div>
+    <div class="card">
+      <h3>XSS Scanner Tool</h3>
+      <p>Custom JS-based scanner for detecting reflected/stored XSS on forms and URL params.</p>
+    </div>
+    <div class="card">
+      <h3>Payload Generator</h3>
+      <p>A CLI payload builder that creates reverse shells for Bash, Python, Netcat, and PowerShell.</p>
+    </div>
+  </div>
+</section>
+
+<section id="writeups">
+  <h2>CTF & Lab Write-ups</h2>
+  <ul>
+    <li><a href="https://medium.com/@yourusername/hackthebox-machine-writeup" target="_blank">Hack The Box: Legacy Write-up</a></li>
+    <li><a href="https://yourblog.com/tryhackme-room-writeup" target="_blank">TryHackMe: Blue Room Write-up</a></li>
+    <li><a href="https://github.com/yourname/ctf-writeups" target="_blank">GitHub: CTF Write-ups Collection</a></li>
+  </ul>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <ul>
+    <li>TryHackMe - Complete Beginner Path ✅</li>
+    <li>Hack The Box - Starting Point Completion ✅</li>
+    <li>CompTIA Security+ (In Progress)</li>
+    <li>OffSec Proving Grounds (PG Play) - Active</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:jane.cyber@example.com">jane.cyber@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/janecyber" target="_blank">github.com/janecyber</a></p>
+  <p>TryHackMe: <a href="https://tryhackme.com/p/yourusername" target="_blank">tryhackme.com/p/yourusername</a></p>
+  <p>Hack The Box: <a href="https://app.hackthebox.com/profile/yourusername" target="_blank">HTB Profile</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Jane CyberStudent. Stay curious, stay secure.</p>
+</footer>
+
+</body>
+</html>
